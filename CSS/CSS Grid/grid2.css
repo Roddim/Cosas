@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:        /* Template area */
+    "header header header"      /* These will be the grid area, it can be anything */
+    "nav content sidebar"       /* Text representation of how we want the header, 3 colums 3 rows */
+    "nav footer footer"
+    ;
+    grid-template-columns: 1fr 4fr 1fr;     /* Content size, it goes by columns, the navbar will be 1fr, content 4fr and sidebar 1fr */
+    grid-template-rows: 80px 1fr 70px;
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+    background: steelblue;
+    color: white;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+/* Setting the grid area */
+header {                    /* Using the correct selector */
+    grid-area: header;      /* The 'header' its what we used above in the body, whatever we put there */
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+

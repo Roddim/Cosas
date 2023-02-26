@@ -1,0 +1,30 @@
+body {
+    background-color: #333;
+}
+
+.box {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;     /* To be able to move it around, the box */
+    animation-name: animation1;  /* you can call the animation whatever you want */
+    animation-duration: 4s;     /* it's gonna do the animation we want in 4 seconds */
+    animation-iteration-count: infinite; /* # of times itll do the animation, can also be numbers */
+    animation-fill-mode: forwards; /* makes the anymation stay in its last state instead of becoming an square again */
+    /* animation-delay: 2s; */        /* time it takes to start */
+    /* animation-direction: alternate; */  /* direction it'll go */
+    /* animation-timing-function: linear; */ /* makes the animation go at the same speed all the time, ease in and out for example makes it go slowe or faster at the begging or end */
+}
+
+/* @ is for adding something */
+
+@keyframes animation1 {
+    0% {background: white; left: 0px; top: 0px; border-radius: 0 0 0 0;} /* at 0% of this animation use these styles */
+    25% {background: red; left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+    50% {background: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+    75% {background: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+    100% {background: white; left: 0px; top: 0px; border-radius: 50%;} /* it-s gonna start and end white */
+}
+
+/* move it around, with left and the number of pixels  */ 
+/* border property makes it change shape */ 

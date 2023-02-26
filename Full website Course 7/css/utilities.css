@@ -1,0 +1,236 @@
+/* Containers, utilities. Classes used all around the website, are gonna be repeated */
+.container {                        /* Making a container to keep the navbar centered in big screens */
+    max-width: 1100px;              /* If streched past 1100px the navbar stays there */
+    margin: 0 auto;
+    overflow: auto;                 /* Gets rid of the space above given in h1,h2 margin 10px, check what it does  */ 
+    padding: 0 40px;                /* 0 top bottom and 40 left right */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {                             /* We are changing some of these properties above in showcase because these are general for all grids, above we have the specific showcase grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);     /* fraction of the available space in the container */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;                   /* To put the contens on the middle of the container */   
+    /* overflow-x: hidden;             To hide the scroll bar */
+}
+
+.card {                             /* The card class for the form */
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 /*horizontal offset*/ 3px /*vertical offset*/ 10px /* blur */ rgba(0, 0, 0, 0.2) /* the alfa value, last, is the transparecy */;
+    padding: 20px;
+    margin: 10px;
+}   
+
+.btn {                              /* all buttons */
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+}
+
+.btn-outline {                      /* To change the specific button below the text */
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn:hover {
+    transform: scale(0.8);          /* makes it smaller when hovering */
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Alert */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
+}
+
+/* Margins, framework, different margins we can use if needed */
+
+.my-1 {
+    margin: 1rem 0;                   /* rem multiplies te html default font size of 16px, if we change the font size it multiplies that one. In this case gives 60px top and bottom */
+}
+
+.my-2 {
+    margin: 1.5rem 0;                 /* my- because its the y axis */
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem;
+}
+
+.my-5 {
+    margin: 4rem;
+}
+
+/* General margins */
+.m-1 {
+    margin: 1rem;                   
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+/* Padding */                        /* Ctrl + D to select different items of the same tyme, like all the "my" */
+.py-1 {
+    padding: 1rem 0;                   
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+/* General padding */
+
+.p-1 {
+    padding: 1rem;                   
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+/* Backgrounds and color buttons */
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-primary a, .btn-primary a,
+.bg-secondary a, .btn-secondary a, 
+.bg-dark a, .btn-dark a a {             /*  to make any link white, because due to the first "a" tag styling links would be black by default  */
+    color: #fff;
+}
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--light-color); 
+}
+
+/* Text sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+

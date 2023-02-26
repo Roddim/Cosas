@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    height: 400px;  /* if we don't have a height, we can't move the elements vertically in a row */
+    display: flex;
+    background: #333;
+    /* aligment properties, it's used on the flex container 
+    justify-content: end;   it works with the main axis, in a flex row, horizontal is the main axis and vertical the cross axis
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;   
+    align-items: end;      property to align in the cross axis, this is why we have the height, to align things vertically */
+    align-items: center;
+    justify-content: space-around;
+
+    /*flex-direction: column;      To make the boxes a column instead of a row */
+    /* In a column the main axis is vertical and the cross horizontal, so align items is going to align horizontaly, becaise align works on the cross axis
+    and justify content is going to work vertically  
+    flex-wrap: wrap;    its used for wraping boxes when the window gets shrunken, if it can't fit something it moves it down */
+}   
+
+/*
+.flex-container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+*/
+
+.item {
+    /* flex-basis: 300px; */
+    height: 100px;
+    background: #254de4;
+    margin: 10px;
+    color: white;
+    flex: 1;            /* makes all the boxes have the same width, shrink and basis */ 
+    /* before flex box this is how it was made, also the comment above of flex-container::after  
+    float: left; 
+    */ 
+
+    display: flex;  /* If we want to style inside the boxes themselves, like the text */
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.item:nth-of-type(1) {
+    order: 2;
+    /* flex-basis: 200px;        flex basis goes on the item, it's the width of the box, it's the exact same as width 
+    if working with growth, the box won't go below 200px because that's the value of the flex-basis, that's the start point 
+    and it grows accordingly, if applied to all the items it makes them the same size  
+    flex-shrink: 1;      This adjusts the shrink rate of the boxes when making the window smaller, doesn't strech */
+}
+
+.item:nth-of-type(2) {
+    order: 3;
+    /* 
+    flex-grow: 1; flex growth its kinda like a growth rate, its for filling up the space in the row, kinda like width, it adjusts to the width of the window
+    makes the site responsive  */
+    
+}
+
+.item:nth-of-type(3) {
+    order: 1;
+    /*
+    flex-grow: 3; */
+    
+}
+
+/*
+.item:nth-of-type(1) {
+    align-self: flex-start;       this will align only the first box 
+}
+
+.item:nth-of-type(2) {
+    align-self: center;          this will align only the middle box 
+}
+
+.item:nth-of-type(3) {
+    align-self: flex-end;        this will align only the last box 
+}
+*/

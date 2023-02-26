@@ -1,0 +1,59 @@
+/* to make the colums go away because 3 colums it's too much for something like a mobile phone, we use a media query @media and put the containers with the info inside */
+
+@media (min-width: 768px){
+    .container-1 {
+        display: flex;  /* automatically puts them side by side */
+        /* align-items: flex-start;    /* aligns stuff depending on the amount of content inside the box, this moves it up with respect to the other boxes */
+        /* if we use flex-down it moves it down instead */
+        /* align-items: center;  this puts the items in the center, the default is stretch */
+        /* flex-direction: column; If we want to change the direction from horizontally (row) to vertically (column) */
+    }
+    
+    .container-2 {
+        display: flex;      /* the display flex property attachs them to a flex box. Just like this it leaves spaces to the side, justify them
+        justify-content: start;
+        justify-content: end;
+        justify-content: center; 
+        justify-content: space-around;      puts margins around the boxes, the whole thing
+        */
+        justify-content: space-between;     /* puts margin in the middle, between the boxes */
+        
+    }
+}       /* this will make it so when the window gets shrunked down the columns dissapear and it becomes a bunch of piled boxes */
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;    /* pushes the boxes when the window gets small */
+    justify-content: space-between;
+}
+
+.container-1 div, .container-2 div, .container-3 div {  /* Needs the "div" or it'll target the whole container instead of the individual containers, and don't forget the , */
+    padding: 10px;
+    border: 1px #ccc solid;
+
+}
+
+.box-1 {
+    flex: 2;        
+    order: 2;       /* if we want box-1 in the middle of the other 2 */
+
+}
+
+.box-2 {
+    flex: 1;        /* gives us 3 boxes of the same size. Changing the numbers changes the width of the box */
+    order: 1;
+}
+
+.box-3 {
+    flex: 1;
+    order: 3;
+}
+
+.container-2-box {
+    width: 20%;         /* same as below but with flex box properties */
+    flex-basis: 27%;
+}
+
+.container-3-box {
+    flex-basis: 15%;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-weight: 900;
+    margin: 10px;
+}
+
+h4 {
+    color: rgb(23, 21, 21);
+    margin: 0 40px;
+    visibility: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(23, 21, 21);
+    color: #fff;
+    height: 80px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;    /* main axis */
+    align-items: center;        /* cross axis */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;         /* It need to be auto on the left and right or it won't look good */
+    padding: 0 20px;
+    overflow: auto;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 15px 0;         /* 15px above below and 0 sides */
+}
+
+.navbar .center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .left {
+    position: relative;
+    left: 100%;
+}
+
+.flex .name {
+    justify-self: flex-end;
+    margin-left: 130px;
+}

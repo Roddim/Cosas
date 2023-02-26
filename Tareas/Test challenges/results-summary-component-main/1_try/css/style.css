@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Resultados */
+.results .card-blue {
+    background-image: linear-gradient(rgba(73, 9, 177, 0.756), rgb(43, 43, 228));
+    color: #fff;
+    max-width: 265px;
+    height: 370px;
+    text-align: center;
+    border-radius: 5.9%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-right: 0;                    /* You move thing laterally in the grid column by changing the left and right margin */
+}
+
+.container .header {
+    color: #a3a0bb;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 20px;
+}
+
+.numbers .first-result {
+    font-size: 50px;
+}
+.numbers .out-of {
+    font-size: 13px;
+    color: #a3a0bb;
+}
+
+.container .numbers {
+    border: #333 1px solid;
+    border-style: hidden;                   /* To make the border look like is hundido */
+    background-image: linear-gradient(rgba(57, 0, 148, 0.578), #4c36d5);
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    padding: 20px;
+    margin: 10px auto;                      /* To move the circle to the center of the container */
+    text-align: center;
+}
+
+.container .good {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.container .score {
+    font-size: 13px;
+    color: #a3a0bb;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+}
+
+/* White card */
+.container .card-white {
+    color: #333;
+}
+
+
+
+/* Grid */ 
+.results {
+    margin: 100px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: #333 1px solid;
+    gap: 10px;
+}
+
+.results .container {           /* general rules for both containers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+

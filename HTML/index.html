@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html> 
+            <title> HTML cheat sheet </title>  
+ <!-- for comments, can put anything in these -->
+    </head>
+    <body> 
+        <a href="blog.html"> Go to the blog again </a>
+        <hr>            <!-- puts a horizontal line -->
+        <!-- headings -->
+        <h1> This is the biggest heading </h1>
+        <h2> This is another heading </h2>
+        <h3> And it goes on and on </h3>
+        <h4> And it goes on and on </h4>
+        <h5> And it goes on and on </h5>
+        <h6> And it goes on and on </h6>
+        <!-- Paragraphs -->
+        <p> Lorem ipsum dolor, sit amet <strong> Lorem ipsum dolor sit amet.</strong> adipisicing elit. 
+            <!-- To open the link in another tab and not the same as our page --> <a href="http://google.com" target="_blank"> Possimus deleniti maiores quidem voluptas sunt ipsum, 
+            totam nemo unde facere atque at nulla enim deserunt et veniam, ad impedit accusantium. Voluptatibus</a>.</p>
+        <p> Lorem ipsum dolor sit, <em> amet consectetur adipisicing elit </em>. Dolorum, impedit. </p> <!-- Done with "Lorem10 + TAB "-->
+        <p> Lorem, ipsum dolor.</p>
+
+        <!-- lists -->
+        <!-- unordered, each list item needs an <li> tag, for list item, has default padding  -->
+        <ul> 
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+        </ul>
+        <!-- ordered lists --> 
+        <ol> 
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+            <li> Item 4 </li>
+        </ol>
+
+        <!-- tables -->
+        <table> 
+            <thead>                                             <!-- for the heading --> 
+                <tr>                                            <!-- table row, need to be there for the table to work --> 
+                    <th> Name </th>                             <!-- the name the table headings --> 
+                    <th> Email </th>
+                    <th> Age</th>
+                </tr>
+            </thead>
+            <tbody>                                             <!-- for the body, not with the <th> tag because now here goes the data -->
+                <tr>
+                    <td>  Santiago P </td>                      <!-- Table data -->
+                    <td> santiagop1227@hotmail.com </td>
+                    <td>  25 depresion </td>
+                </tr>
+                <tr>
+                    <td> Reinel P </td>
+                    <td> reinel.com </td>
+                    <td>  61  </td>
+                </tr>
+                <tr>
+                    <td>  Teresa O </td>
+                    <td> teresa.com </td>
+                    <td>  56  </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>                                                    <!-- Can be used to separate stuff -->
+        <hr>                                                    <!-- puts a line -->
+        <br>
+
+        <!-- Forms, with html you can-t have functionality in the form -->
+
+        <form action="process.php" method="post">               <!-- the action attribute defines what will happen to the form when submited-->
+            <div>
+                <label for="First name"> First name </label>    <!-- The input tag is for stuff to put inside an small box, one word for example-->
+                <input type="text" name="first-name" placeholder="Enter first name">          <!-- the placeholder text goes away when you click the box --> 
+            </div>
+<!-- label and input are both inline tags, can be separated with the <div> tag -->
+            <br>
+            <div>
+                <label for="Last name"> Last name </label>
+                <input type="text" name="first-name">           <!-- name is for server stuff -->
+            </div>
+            <br>
+            <div>
+                <label for="Email"> Email </label>
+                <input type="email" name="first-name">          <!-- Type= "email" for email addresses-->                 
+            </div>
+            <br>
+            <div>
+                <label for="Message"> Message </label>          <!-- For text inside a box -->
+                <textarea name="message" id="1" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="Message"> Gender </label>           <!-- For a list of options from which to chose from, need the "select tag" -->
+                <select name="gender" id="2">
+                    <option value="male"> Male </option>
+                    <option value="female"> Female </option>
+                    <option value="other"> Other </option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="Age"> Age: </label>          
+                <input type="number" name="age" value="30">     <!-- we can add predefine values to inputs --> 
+            </div>
+            <br>
+            <div>
+                <label for="bd"> Birthday: </label>          
+                <input type="date" name="bd">  
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">  <!-- last button to submit the form, buttons only need the input tag. "value" is the actual name of the button -->
+        </form>
+
+        <!-- Button, there is a button tag -->
+        <br>
+        <button> Click me </button>                             <!-- Won't do anything, need JS to bind the button to something-->
+        <br>
+        <br>
+        <!-- Images, we use the img tag, it-s a self closing tag   -->
+        <img src="imgexample/samplebird.jpeg" alt="the text here shows if the image can't be found">  <!-- it knows where the image is because it-s in the same folder as the page -->
+        <br>                                                    <!-- img tag is an inline tag -->
+        <br>
+        <br>                                               
+        <img src="imgexample/sasmplebird.jpeg" alt="the text here shows if the image can't be found">
+        <br>
+        <br>
+        <br>
+        <!-- we can also make the image a link, and make it open bigger if clicked, byt putting the name of the image in the href= -->
+        <a href="imgexample/sample2.jpg"> 
+            <img src="imgexample/sample2.jpg" alt="bird2 image" width="400" height="200">
+        </a>
+        
+        <!-- quotations -->
+        <blockquote cite="http://traversymedia.com">            <!-- in cite we put the page we took the cite from -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sequi officia quod. Molestias, mollitia culpa! 
+        </blockquote>
+        <br>                <!-- abreviation tag, used to abreviate stuff and let the user see the full meaning -->
+        <p>
+            The  <abbr title="World wide web"> WWW </abbr> is awesome 
+        </p>
+        <br>
+        <!-- another cite tag, inside the cite is cited, basically italic text and that's it -->
+        <p>
+            What <cite> the citation says goes</cite> inside the cite tag
+        </p>
+    </body> 
+
+</html> 

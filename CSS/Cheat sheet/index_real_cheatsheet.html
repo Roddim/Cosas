@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- There are 2 ways to use the font CSS, in the style.css file we have it -->
+    <div class="container">
+        <div class="box-1">
+            <h1> Hello world </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus odit sunt earum, eius quae doloremque sint aut, distinctio quisquam voluptatum error a aspernatur quidem, veritatis nemo ipsam asperiores nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur saepe, exercitationem temporibus, veniam doloremque enim voluptate sequi dignissimos fugiat et sunt facilis impedit, ratione commodi. Dolorem rem dolorum eos.</p>
+        </div>
+
+        <div class="box-2">     <!-- This new class has none of the box-1 styling cuz it's another element -->
+            <h1> Goodbye world </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus odit sunt earum, eius quae doloremque sint aut, distinctio quisquam voluptatum error a aspernatur quidem, veritatis nemo ipsam asperiores nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur saepe, exercitationem temporibus, veniam doloremque enim voluptate sequi dignissimos fugiat et sunt facilis impedit, ratione commodi. Dolorem rem dolorum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a voluptas autem ratione commodi quam odio quia recusandae libero nisi earum dolores ullam sit, impedit consequatur, mollitia quidem! Soluta, vero.</p>
+            <a href="" class="button"> Read more </a>
+        </div>
+
+        <div class="categories">       <!-- The class is anything inside this div, the list and h2 included -->
+            <h2> Categories </h2>
+            <ul>
+                <li><a href="#"> Category 1 </a></li>
+                <li><a href="#"> Category 2 </a></li>
+                <li><a href="#"> Category a </a></li>
+                <li><a href="#"> Category 4 </a></li>
+                <li><a href="#"> Category 5 </a></li>
+                <li><a href="something.html"> Category non-visited </a></li>
+            </ul>
+        </div>
+
+        <!-- Styling forms -->
+        <form class="my-form">               <!-- forms have a label and input, and the elements go separated by div tags, hence the multiple classes -->   
+            <div class="form-group">
+                <label for="Identity"> Name </label>            <!-- the "for" attribute in the label tags is the id of the thing it refers to, Identity for name -->
+                <input type="text" name="first-name" placeholder="whole name">          
+            </div>
+
+            <div class="form-group">        <!-- input and labels are inline, they go on the same line  -->
+                <label for="Email"> Email </label>
+                <input type="text" name="first-name" placeholder="@something">    <!-- the "type" attribe can be changed to what we want for CSS -->                      
+            </div>
+
+            <div class="form-group">
+                <label for="Message"> Message </label>          
+                <textarea name="message" id="1" cols= "30" rows="5" placeholder="Write your message here"></textarea>     <!-- we can use "cols=100%" to fill the box to the page-->
+            </div>
+
+            <div> 
+                <input class="button" type="submit" value="Submit">
+            </div>
+
+            <!-- floating stuff -->
+            <div class="block">
+                <h3> Heading </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ipsa consequatur nesciunt praesentium laudantium distinctio. Nisi excepturi accusamus quas aliquid, eaque repellat possimus voluptatem officia magnam doloribus facere asperiores?</p>
+            </div>
+
+            <div class="block">
+                <h3> Heading </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ipsa consequatur nesciunt praesentium laudantium distinctio. Nisi excepturi accusamus quas aliquid, eaque repellat possimus voluptatem officia magnam doloribus facere asperiores?</p>
+            </div>
+
+            <div class="block">
+                <h3> Heading </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ipsa consequatur nesciunt praesentium laudantium distinctio. Nisi excepturi accusamus quas aliquid, eaque repellat possimus voluptatem officia magnam doloribus facere asperiores?</p>
+            </div>
+
+            <div class="clr"></div>     <!-- This class is used to clear the floating, clr for clear, if not done everything will look messed up -->
+
+            <div id="main-block">
+                <h3> Heading </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ipsa consequatur nesciunt praesentium laudantium distinctio. Nisi excepturi accusamus quas aliquid, eaque repellat possimus voluptatem officia magnam doloribus facere asperiores?</p>
+            </div>
+
+            <div id="side-bar">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ipsa consequatur nesciunt praesentium laudantium distinctio. Nisi excepturi accusamus quas aliquid, eaque repellat possimus voluptatem officia magnam doloribus facere asperiores?</p>
+            </div>
+
+            <div class="clr"></div>     <!-- remenber to clear after floating -->
+
+            <div class="p-box">
+                <h1> Hellow</h1>
+                <h2> Goodbye</h2>
+            </div>
+
+            <!-- pseudo clases -->
+
+            <ul class="my-list">
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+                <li> List item </li>
+            </ul>
+
+            <a class="fix-me button" href=""> Hello </a>       <!-- it has 2 classes, button, and fix-me-->
+    </div><!-- container ends here -->
+</body>
+</html>

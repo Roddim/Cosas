@@ -1,0 +1,24 @@
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;    /* so the box goes in the middle */
+    top: 200px;
+    transition-property: background, border-radius, transform; 
+    transition-duration: 1s;    /* like this it'll fade to red instead of just changing from white to red, you can separate what it does, like changing red 
+    and then becoming a circle by adding a , for each property. time-duration: 1s (for background) and 3s (for the border, for example) */
+    /* transition-delay: 2s; */
+    /* transition-ti ming-function: linear; */ /* to make a delay in how much it takes to change */
+
+}
+
+.box:hover {        /* doesn't neccesarily needs to be hover */
+    background: red;  /* there are things that can be transitioned, need a middle state */
+    border-radius: 50%; /* will change from square to circle when hovered */
+    transform: rotateY(180deg);
+}

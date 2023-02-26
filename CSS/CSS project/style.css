@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;     /* this allows the padding and margin to be accounted for when styling, instead of goign over the parent box */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: lightseagreen;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;     /* 0 margin top and bottom and auto left and right which is the middle */
+    padding: 0 30px;
+
+    /* display: flex; */
+}
+
+.navbar {
+    background-color: darkolivegreen;
+    color: #fff;
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: aquamarine;
+}
+
+.navbar .container {
+    display: flex;      /* this puts the logo and the links in the same row */
+    justify-content: space-between;     /* to separate logo and the list items */
+    align-items: center;
+    height: 100%;       /* To center the contents vertically in the navbar */ 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;      /* to get rid of the underline */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+   margin-left: 20px; 
+}
+
+.header {
+    background-color: darkgreen;
+    color: white;
+    min-width: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1,2;   /* to change the space if we make the browser window small */
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* boxes section, we apply the flexbox to boxes = containers */ 
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    background: #121233;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);  /* box shadow */
+    padding: 15px 20px;                          /* Padding goes inside the box, margin goes around the box */
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    /* both do the same, stack the boxes */
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
